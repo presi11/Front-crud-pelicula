@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "peliculas-crud"
+  "defaultProject": "peliculas-crud",
+  "cli": {
+    "analytics": "5fb57210-d1f7-4e78-9829-e6a07c713cbb"
+  }
 }

@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="card-body">
+        <h5 class="card-tittle">{{titulo}}</h5>
+        <form>
+
+            <div class="form-group row">
+                <label for="titulo" class="col-form-label col-sm-2"> Titulo</label>
+                <div class="col-sm-6"> 
+                    <input type="text" class="form-control" name="titulos" [(ngModel)] = "pelicula.titulo">
+                </div>
+             </div>
+
+             <div class="form-group row">
+                <label for="Sinopsis" class="col-form-label col-sm-2"> Sinopsis</label>
+                <div class="col-sm-6"> 
+                    <input type="text" class="form-control" name="Sinopsis" [(ngModel)] = "pelicula.sinopsis">
+                </div>
+             </div>
+
+             <div class="form-group row">
+                <label for="Genero" class="col-form-label col-sm-2"> Genero</label>
+                <div class="col-sm-6"> 
+                    <input type="text" class="form-control" name="Genero" [(ngModel)] = "pelicula.genero">
+                </div>
+             </div>
+
+             <button class="btn btn-success" role="button" (click)='save()'> Registrar pelicula</button>
+
+
+        </form>
+     </div>
+
+</div>

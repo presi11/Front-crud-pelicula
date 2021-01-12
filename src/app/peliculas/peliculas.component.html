@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>{{Nombre}}</h1>
+
+<button class="btn btn-info" type="button" [routerLink]="['/peliculas/form']"> Nueva pelicula</button>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Titulo</th>
+        <th scope="col">Sipnopsis</th>
+        <th scope="col">Genero</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pelicula of peliculas">
+        <th scope="row">{{pelicula.id}}</th>
+        <td>{{pelicula.titulo}}</td>
+        <td>{{pelicula.sinopsis}}</td>
+        <td>{{pelicula.genero}}</td>
+        <td><button type="button" name="button" class="btn btn-primary" [routerLink]="['/peliculas/form/', pelicula.id]" > Editar </button> 
+        <button type="button" name="button" class="btn btn-danger" (click)="delete(pelicula)"> Eliminar </button></td>
+    
+      </tr>
+    </tbody>
+  </table>
+</div>
