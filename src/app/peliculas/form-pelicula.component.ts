@@ -49,6 +49,12 @@ export class FormPeliculaComponent implements OnInit {
       }
     );
   }
+  update():void{
+    this.peliculaService.update(this.pelicula).subscribe(
+      res=>this.router.navigate(['/peliculas'])
+    )
+
+  }
 
 
 
